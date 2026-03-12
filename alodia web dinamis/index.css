@@ -1,0 +1,482 @@
+/* CSS Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Container untuk Sidebar */
+.sidebar-container {
+    width: 325px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Sidebar Utama */
+.sidebar-main {
+    flex: 12;
+    background: linear-gradient(180deg, #6a11cb, #2575fc);
+    padding: 25px;
+    box-sizing: border-box;
+    color: white;
+}
+
+/* Sidebar Tambahan */
+.sidebar-secondary {
+    flex: 1;
+    background: linear-gradient(180deg, #2575fc, #6a11cb);
+    padding: 15px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.sidebar-main h3, .sidebar-secondary h3 {
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.sidebar-main a, .sidebar-secondary a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    position: relative;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.sidebar-main a:hover, .sidebar-secondary a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding-left: 20px;
+}
+
+.sidebar-main a:not(:last-child)::after, .sidebar-secondary a:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Ikon Sederhana dengan CSS 
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+.icon-home::before { content: '🏠';}
+.icon-plus::before { content: '+'; }
+.icon-list::before { content: '≡'; }
+.icon-edit::before { content: '✎'; }
+.icon-trash::before { content: '🗑'; }
+.icon-info::before { content: 'ℹ'; }
+.icon-contact::before { content: '✉'; }
+
+
+*/
+
+/* Ikon Sederhana dengan CSS */
+.icon {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+.icon-home::before { content: '🏠'; }      /* Ikon untuk Home (tidak berubah) */
+.icon-plus::before { content: '+'; }       /* Ikon untuk Tambah Barang (tidak berubah) */
+.icon-box::before { content: '📦'; }       /* Ikon baru untuk Lihat Barang 1 dan 2 */
+.icon-list::before { content: '≡'; }        /* Ikon baru untuk Lihat Barang 1 dan 2 */ 
+.icon-edit::before { content: '✎'; }       /* Ikon untuk Edit (tidak berubah) */
+.icon-trash::before { content: '🗑'; }     /* Ikon untuk Hapus (tidak berubah) */
+.icon-company::before { content: '🏢'; }   /* Ikon baru untuk Profil Perusahaan */
+.icon-vision::before { content: '🌟'; }    /* Ikon baru untuk Visi-Misi */
+.icon-structure::before { content: '📈'; } /* Ikon baru untuk Struktur Organisasi */
+.icon-contact::before { content: '✉'; }    /* Ikon untuk Hubungi Kami (tidak berubah) */
+
+/* Logo di Sidebar Utama */
+.sidebar-logo {
+    display: block;
+    width: 100%;
+    max-width: 295px;
+    height: 100px;
+    margin: 10px auto;
+    object-fit: cover;
+    border: none; /* hapus frame solid */
+    border-radius: 0; /* hapus radius (memastikan ini tanpa radius) */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Efek glow */
+    transition: box-shadow 0.3s ease; /*  Untuk transisi halus efek glow */
+}
+
+/* untuk efek hover untuk memperkuat glow */
+.sidebar-logo:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 1); /* efek glow lebih terang saat hover */
+}
+/* Konten Utama */
+.content {
+    margin-left: 325px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, #ffffff, #e6f0fa);
+}
+
+iframe {
+    width: 100%;
+    height: calc(100vh - 40px);
+    border: none;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Style untuk Tabel */
+table {
+    width: 100%;
+    max-width: calc(100% - 40px);
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: auto;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+    font-size: 0.95rem;
+}
+
+th {
+    background: linear-gradient(180deg, #4a00e0, #8e2de2);
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+td {
+    background-color: #fefefe;
+    color: #2a2a2a;
+}
+
+tr:hover td {
+    background: linear-gradient(90deg, #b3d4fc, #dfe9f3);
+    transition: background 0.3s ease;
+}
+
+/* Style e Form */
+.form-container {
+    width: 100%;
+    max-width: 800px; /* Lebar lebih besar untuk tampilan lebih proporsional */
+    margin: 20px auto;
+    padding: 30px; /* Padding lebih besar untuk ruang */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2a2a2a;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.form-container p {
+    color: #2a2a2a;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.form-container p.error {
+    color: #d32f2f;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.form-container p.success {
+    color: #2e7d32;
+    font-size: 1rem;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.form-container table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form-container td {
+    vertical-align: middle;
+}
+
+.form-container td.label {
+    width: 30%; /* Kolom label tetap 30% */
+    font-weight: 500;
+    color: #2a2a2a;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="file"],
+.form-container textarea,
+.form-container select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 0.95rem;
+    color: #2a2a2a;
+}
+
+.form-container input[disabled] {
+    background-color: #e0e0e0;
+    color: #666;
+}
+
+.form-container textarea {
+    resize: vertical;
+}
+
+.form-container select {
+    appearance: none;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="5" viewBox="0 0 10 5"><path d="M0 0h10L5 5z" fill="%23333"/></svg>') no-repeat right 10px center;
+   
+
+ background-size: 10px;
+}
+
+.form-container button {
+    padding: 10px 20px;
+    background: linear-gradient(180deg, #4a00e0, #8e2de2);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.form-container button:hover {
+    background: linear-gradient(180deg, #8e2de2, #4a00e0);
+}
+
+.form-container a button {
+    background: #ccc;
+    color: #2a2a2a;
+}
+
+.form-container a button:hover {
+    background: #b3b3b3;
+}
+
+/* Styling untuk TinyMCE */
+.mce-tinymce {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.mce-container, .mce-container * {
+    box-sizing: border-box;
+}
+
+.mce-panel {
+    background-color: #fefefe;
+
+
+
+/* memastikan form di dalam iframe */
+#contentFrame {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+#contentFrame body {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background: transparent;
+}
+
+/* khusus untuk form tambah barang */
+.form-container {
+    margin: 20px auto !important;
+    width: 90% !important;
+    max-width: 800px !important;
+}
+
+/* untuk tabel di dalam form */
+.form-container table {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+/* untuk TinyMCE editor */
+.mce-tinymce {
+    width: 100% !important;
+    margin: 0 auto !important;
+}
+
+/* Perbaikan untuk input dan textarea */
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="file"],
+.form-container textarea,
+.form-container select {
+    width: 100% !important;
+    max-width: 500px !important;
+}
+
+/* untuk tombol submit */
+.form-container button[type="submit"] {
+    display: block;
+    margin: 20px auto 0 !important;
+    width: 200px;
+}
+
+/* Tambahan untuk semua versi */
+.btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: linear-gradient(180deg, #4a00e0, #8e2de2);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(180deg, #8e2de2, #4a00e0);
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background: #f1f1f1;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background: #b3b3b3;
+    transform: scale(1.05);
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+}
+
+/* =========== Home Section =========== */
+.home-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.home-section .home-img img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.home-section .home-content {
+    flex: 1;
+}
+
+.home-section .home-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home-section .home-content h1 span {
+    color: #4a00e0;
+}
+
+.home-section .home-content p {
+    margin: 0.5rem 0;
+    line-height: 1.5;
+}
+
+.home-section .social-icons {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.home-section .social-icons .btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.home-section .social-icons .btn i {
+    font-size: 1.2rem;
+}
+ 
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.contact-list i {
+  margin-right: 0.5rem;
+  color: #4a00e0;
+}
+
