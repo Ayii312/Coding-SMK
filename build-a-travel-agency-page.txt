@@ -1,0 +1,55 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Explore world-class travel destinations with our agency.">
+  <title>Ayak's Travel</title>
+</head>
+<body>
+  <h1>Our Travel Destinations</h1>
+  
+  <p>Discover incredible opportunities to see the world with our curated trips.</p>
+
+  <h2>Packages</h2>
+  
+  <p>We offer a variety of ways to travel, from social groups to solo adventures.</p>
+
+  <ul>
+    <li>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">Group Travels</a>
+    </li>
+    <li>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">Private Tours</a>
+    </li>
+  </ul>
+
+  <h2>Top Itineraries</h2>
+
+  <figure>
+    <a href="https://www.freecodecamp.org/learn" target="_blank">
+      <img src="https://example.com/image1.jpg" alt="Description of destination 1">
+    </a>
+    <figcaption>Beautiful Beach Resort</figcaption>
+  </figure>
+
+  <figure>
+    <a href="https://www.freecodecamp.org/learn" target="_blank">
+      <img src="https://example.com/image2.jpg" alt="Description of destination 2">
+    </a>
+    <figcaption>Mountain Hiking Trail</figcaption>
+  </figure>
+
+  <figure>
+    <a href="https://www.freecodecamp.org/learn" target="_blank">
+      <img src="https://example.com/image3.jpg" alt="Description of destination 3">
+    </a>
+    <figcaption>Historic City Center</figcaption>
+  </figure>
+
+</body>
+</html>
+
+** end of index.html **
+

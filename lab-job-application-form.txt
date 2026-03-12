@@ -1,0 +1,191 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+
+            <label for="position">Position Applied For:</label>
+            <select id="position">
+                <option value="developer">Developer</option>
+                <option value="designer">Designer</option>
+                <option value="manager">Manager</option>
+            </select>
+
+            <fieldset class="radio-group">
+                <legend>Availability</legend>
+                <input type="radio" id="full-time" name="availability" value="full-time">
+                <label for="full-time">Full-Time</label>
+                
+                <input type="radio" id="part-time" name="availability" value="part-time">
+                <label for="part-time">Part-Time</label>
+            </fieldset>
+
+            <label for="message">Cover Letter / Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Reset Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f0f4f8; /* Abu-abu kebiruan yang lembut */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    color: #334155;
+}
+
+/* Container Utama */
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Jarak antar elemen */
+}
+
+/* Label & Input */
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: -5px;
+    color: #475569;
+}
+
+input, select, textarea {
+    padding: 12px 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+/* Pseudo-classes untuk Interaksi */
+input:focus, textarea:focus, select:focus {
+    border-color: #3b82f6; /* Biru modern saat diklik */
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.1);
+}
+
+input:valid:not(:placeholder-shown), 
+textarea:valid:not(:placeholder-shown) {
+    border-color: #10b981; /* Hijau emerald jika benar */
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: #ef4444; /* Merah jika salah */
+}
+
+/* Styling Radio Group */
+.radio-group {
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.radio-group label {
+    font-weight: 400;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+/* Tombol Submit */
+button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #2563eb;
+}
+
+button:active {
+    transform: scale(0.98); /* Efek membal saat diklik */
+}
+
+/* CSS Khusus First-of-type sesuai tugas */
+input:first-of-type {
+    background-color: #f8fafc;
+}
+
+input:focus, textarea:focus {
+    border-color: #3b82f6;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+    border-color: red;
+}
+
+input:valid, select:valid, textarea:valid {
+    border-color: green;
+}
+
+.radio-group input[type="radio"]:checked {    
+    border-color: #3b82f6;
+    background-color: #3b82f6;
+    box-shadow: 0 0 5px rgba(59, 130, 246, 0.5)
+}
+
+/* Menggunakan Sibling Combinator (+) */
+input[type="radio"]:checked + label {
+    color: #3b82f6;
+}
+
+/* Ini cara menghubungkan radio yang di-klik ke teks label di sebelahnya */
+.radio-group input[type="radio"]:checked + label {
+    color: #3b82f6;
+    font-weight: bold;
+}
+
+** end of styles.css **
+

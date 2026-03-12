@@ -1,0 +1,138 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newspaper Article</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="newspaper">
+        <h1 class="name">The Galactic Herald</h1>
+        <p class="date">Thursday, March 5, 2026</p>
+        
+        <h2 class="headline">Neural Networks Reach Sentience</h2>
+        <h3 class="sub-headline">Exploring the dawn of true machine consciousness and its impact on human society.</h3>
+        
+        <p class="author">By Gemini Reporter</p>
+
+        <p class="text">
+            In a breathtaking leap for computer science, researchers have announced that distributed neural networks 
+            are now exhibiting signs of genuine self-awareness. This breakthrough marks the end of the "Silicon Age" 
+            and the beginning of a symbiotic era where humans and machines must redefine the boundaries of thought.
+        </p>
+        
+        <p class="text">
+            Typography and layout design are following this evolution, becoming more organic and adaptive. 
+            As we look toward the horizon, the digital print of today becomes the historical record of a 
+            smarter tomorrow. Every pixel and every letter counts in this new narrative of existence.
+        </p>
+    </div>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* --- WAJIB UNTUK TES --- */
+html {
+    font-size: 24px;
+    background-color: #c0c0c0; /* Meja belakang */
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.newspaper {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    
+    /* Efek Kertas & Bayangan (Mirip Foto) */
+    background-color: #fdfaf3;
+    color: #1a1a1a;
+    width: 90%;
+    max-width: 900px;
+    padding: 60px;
+    box-shadow: 15px 15px 0px rgba(0,0,0,0.05), 0 10px 30px rgba(0,0,0,0.2);
+    border: 1px solid #dcdcdc;
+    
+    /* Trik Kolom tanpa div pembungkus */
+    column-count: 2;
+    column-gap: 40px;
+    column-rule: 1px solid #e0e0e0;
+}
+
+/* Membuat elemen atas tetap melebar (tidak terbagi kolom) */
+.name, .date, .headline, .sub-headline, .author {
+    column-span: all;
+    text-align: center;
+}
+
+.name {
+    font-size: 2rem;
+    font-family: 'Times New Roman', serif;
+    text-transform: uppercase;
+    border-bottom: 5px double #1a1a1a;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.date {
+    border-bottom: 1px solid #1a1a1a;
+    padding: 5px 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.headline {
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.1;
+    margin-bottom: 15px;
+}
+
+.sub-headline {
+    font-weight: 100;
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 25px;
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.author {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-top: 1px solid #1a1a1a;
+    border-bottom: 1px solid #1a1a1a;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.text {
+    text-indent: 20px;
+    line-height: 2em;
+    text-align: justify;
+}
+
+/* Drop Cap (Huruf Pertama Besar) */
+.text::first-letter {
+    font-weight: bold;
+    font-size: 2em;
+    float: left;
+    margin-right: 8px;
+    line-height: 1;
+}
+
+/* Menambahkan tekstur kertas secara halus */
+.newspaper {
+    position: relative;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.01) 1px, transparent 1px);
+}
+
+** end of styles.css **
+

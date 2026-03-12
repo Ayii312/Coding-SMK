@@ -1,0 +1,126 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="form-container">
+        
+        <form>
+            <h2>Contact Us</h2>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="full-name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="user-email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="user-message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+    </div>
+
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Styling Container */
+.form-container {
+  background-color: #f0f4f8;
+  border-radius: 10px;
+  padding: 20px;
+  width: 400px;
+  margin: 20px auto; /* Agar form berada di tengah layar */
+}
+
+/* Styling Label */
+label {
+  display: block; /* Agar label berada di atas input */
+  margin: 10px 0;
+  color: #334e68;
+}
+
+/* Styling Input dan Textarea */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box; /* Memastikan padding tidak menambah lebar elemen */
+}
+
+/* Styling Button */
+button {
+  background-color: #243b53;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Efek transisi halus */
+}
+
+/* Efek Hover Button */
+button:hover {
+  background-color: #486581;
+}
+
+/* Pastikan file ini bernama styles.css */
+
+/* Test 15, 16, 17, 18 */
+.form-container {
+  background-color: #e0e0e0; /* Test 15 */
+  border-radius: 15px;       /* Test 16 */
+  padding: 25px;             /* Test 17 */
+  width: 350px;              /* Test 18 */
+  margin: 0 auto;
+}
+
+/* Test 19 */
+label {
+  display: block; 
+  margin: 15px;              /* Test 19: Margin */
+  color: #333333;            /* Test 19: Font Color */
+}
+
+/* Test 20 */
+input {
+  width: 100%;               /* Test 20: Width */
+  padding: 8px;              /* Test 20: Padding */
+  margin-bottom: 20px;       /* Test 20: Margin Bottom */
+}
+
+/* Test 21 */
+textarea {
+  width: 100%;               /* Test 21: Width */
+  padding: 10px;             /* Test 21: Padding */
+  margin-bottom: 25px;       /* Test 21: Margin Bottom */
+}
+
+/* Test 22, 23 */
+button {
+  background-color: #007bff; /* Test 22 */
+  font-size: 18px;           /* Test 23 */
+  padding: 10px 20px;
+  border: none;
+}
+
+/* Test 24 */
+button:hover {
+  background-color: #0056b3; /* Test 24: Hover effect change color */
+  cursor: pointer;
+}
+
+** end of styles.css **
+

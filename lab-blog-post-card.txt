@@ -1,0 +1,89 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="blog-post-card">
+        <img class="post-img" src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg" alt="A scenic mountain view under a clear sky">
+        
+        <div class="post-content">
+            <h2 class="post-title">Exploring the Great Outdoors</h2>
+            <p class="post-excerpt">Discover the most breathtaking trails and hidden gems in the national parks this season.</p>
+            <a href="#" class="read-more">Read More</a>
+        </div>
+    </div>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* 10: Set body background to non-white */
+body {
+    background-color: #f0f2f5;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+/* 8, 9, 11, 12: Card styling */
+.blog-post-card {
+    background-color: white;
+    border-radius: 15px;
+    width: 350px;
+    text-align: left;
+    overflow: hidden; /* Ensures image respects card's rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 21, 22: Image styling */
+.post-img {
+    width: 100%;
+    display: block;
+    border-bottom: 3px solid #e0e0e0;
+}
+
+/* 13: Padding for text content */
+.post-content {
+    padding: 20px;
+}
+
+/* 23: Title and Excerpt styling */
+.post-title {
+    color: #2c3e50;
+    margin: 10px;
+}
+
+.post-excerpt {
+    color: #5d6d7e;
+    margin: 10px;
+    line-height: 1.5;
+}
+
+/* 15-20: Read More link as a button */
+.read-more {
+    display: inline-block;
+    color: white;
+    background-color: #3498db;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* 14: Hover effect */
+.read-more:hover {
+    background-color: #2980b9;
+}
+
+** end of styles.css **
+

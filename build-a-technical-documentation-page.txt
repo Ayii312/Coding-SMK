@@ -1,0 +1,149 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav id="navbar">
+    <header>JS Documentation</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#JavaScript_and_Java">JavaScript and Java</a>
+    <a class="nav-link" href="#Hello_world">Hello world</a>
+    <a class="nav-link" href="#Variables">Variables</a>
+    <a class="nav-link" href="#Constants">Constants</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>JavaScript is a cross-platform, object-oriented scripting language.</p>
+      <p>It is a small and lightweight language.</p>
+      <code>var x = 5;</code>
+      <ul>
+        <li>Client-side JavaScript</li>
+        <li>Server-side JavaScript</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="JavaScript_and_Java">
+      <header>JavaScript and Java</header>
+      <p>JavaScript and Java are similar in some ways but fundamentally different.</p>
+      <p>The JavaScript language design resembles C and C++.</p>
+      <code>console.log("Hello Java");</code>
+    </section>
+
+    <section class="main-section" id="Hello_world">
+      <header>Hello world</header>
+      <p>To get started with writing JavaScript, open the Scratchpad.</p>
+      <p>Type the following code into the window:</p>
+      <code>function greet() { return "Hello World"; }</code>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>Variables</header>
+      <p>You use variables as symbolic names for values in your application.</p>
+      <p>The names of variables, called identifiers, conform to certain rules.</p>
+      <code>let myValue = 10;</code>
+      <ul>
+        <li>Must start with a letter</li>
+        <li>Can include underscores</li>
+        <li>Case sensitive</li>
+      </ul>
+    </section>
+
+    <section class="main-section" id="Constants">
+      <header>Constants</header>
+      <p>You can create a read-only, named constant with the const keyword.</p>
+      <p>A constant cannot change value through assignment.</p>
+      <code>const PI = 3.14;</code>
+    </section>
+  </main>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Layout Desktop */
+body {
+  display: flex;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+}
+
+#navbar {
+  position: fixed;
+  min-width: 250px;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  border-right: 2px solid;
+  background-color: white;
+}
+
+#navbar header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.nav-link {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: black;
+  border-top: 1px solid gray;
+}
+
+#main-doc {
+  margin-left: 310px; /* Jarak agar tidak tertutup navbar */
+  padding: 20px;
+}
+
+.main-section {
+  margin-bottom: 40px;
+}
+
+header {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+code {
+  display: block;
+  background-color: #f7f7f7;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+/* Tes 22: Media Query untuk layar kecil (HP) */
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+  
+  #navbar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 2px solid;
+  }
+  
+  #main-doc {
+    margin-left: 0;
+  }
+}
+
+** end of styles.css **
+

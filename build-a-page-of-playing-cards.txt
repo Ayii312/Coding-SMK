@@ -1,0 +1,102 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing Cards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main id="playing-cards">
+
+    <div class="card">
+      <div class="left">A ♠</div>
+      <div class="middle">
+        <div>♠</div>
+      </div>
+      <div class="right">♠ A</div>
+    </div>
+
+    <div class="card">
+      <div class="left">2 ♣</div>
+      <div class="middle">
+        <div>♣</div>
+        <div>♣</div>
+      </div>
+      <div class="right">♣ 2</div>
+    </div>
+
+    <div class="card">
+      <div class="left" style="color: red;">3 ♥</div>
+      <div class="middle" style="color: red;">
+        <div>♥</div>
+        <div>♥</div>
+        <div>♥</div>
+      </div>
+      <div class="right" style="color: red;">♥ 3</div>
+    </div>
+
+  </main>
+
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  background-color: #d8bfd8; /* Warna latar ungu muda seperti di gambar */
+  padding: 20px;
+}
+
+/* Test 8 - 11: Kontainer utama kartu */
+#playing-cards {
+  display: flex;             /* Test 8 */
+  justify-content: center;   /* Test 9 */
+  flex-wrap: wrap;           /* Test 10 */
+  gap: 20px;                 /* Test 11 */
+}
+
+/* Test 3, 12, 13: Styling setiap kartu */
+.card {
+  width: 200px;              /* Test 3 */
+  height: 300px;             /* Test 3 */
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid #333;
+  padding: 15px;
+  display: flex;             /* Test 12 */
+  justify-content: space-between; /* Test 13 */
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+}
+
+/* Test 14: Kolom kiri di atas */
+.left {
+  align-self: flex-start;    /* Test 14 */
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Test 15, 17, 18: Kolom tengah berisi simbol */
+.middle {
+  align-self: center;        /* Test 15 */
+  display: flex;             /* Test 17 */
+  flex-direction: column;    /* Test 18 */
+  font-size: 50px;
+  gap: 10px;
+}
+
+/* Test 16: Kolom kanan di bawah (terbalik) */
+.right {
+  align-self: flex-end;      /* Test 16 */
+  font-size: 20px;
+  font-weight: bold;
+  transform: rotate(180deg); /* Membuat teks kanan bawah terbalik seperti kartu asli */
+}
+
+** end of styles.css **
+

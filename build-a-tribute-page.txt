@@ -1,0 +1,153 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tribute Page | Dr. Norman Borlaug</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main id="main">
+      
+      <h1 id="title">Dr. Norman Borlaug</h1>
+      <p>Pria yang menyelamatkan satu miliar nyawa melalui Revolusi Hijau</p>
+
+      <figure id="img-div">
+        <img
+          id="image"
+          src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg"
+          alt="Dr. Norman Borlaug bekerja di ladang gandum bersama peneliti lain"
+        />
+        <figcaption id="img-caption">
+          Dr. Norman Borlaug (ketiga dari kiri) melatih para ahli biologi muda di Meksiko tentang cara meningkatkan hasil panen gandum.
+        </figcaption>
+      </figure>
+
+      <section id="tribute-info">
+        <h3>Garis Waktu Kehidupan Dr. Borlaug:</h3>
+        <ul>
+          <li><strong>1914</strong> - Lahir di Cresco, Iowa.</li>
+          <li><strong>1933</strong> - Kuliah di University of Minnesota mengambil jurusan kehutanan.</li>
+          <li><strong>1944</strong> - Pindah ke Meksiko untuk memimpin penelitian gandum.</li>
+          <li><strong>1963</strong> - Membantu India dan Pakistan mengatasi krisis pangan.</li>
+          <li><strong>1970</strong> - Dianugerahi Hadiah Nobel Perdamaian.</li>
+          <li><strong>2009</strong> - Meninggal dunia pada usia 95 tahun.</li>
+        </ul>
+        
+        <blockquote>
+          <p>
+            "Borlaug adalah sosok langka yang menggabungkan sains hebat dengan kemanusiaan yang mendalam."
+          </p>
+        </blockquote>
+
+        <h3>
+          Pelajari lebih lanjut tentang beliau di 
+          <a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">
+            Wikipedia
+          </a>.
+        </h3>
+      </section>
+    </main>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* 1. Pengaturan Dasar Tubuh Halaman */
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+/* 2. Kontainer Utama (#main) */
+#main {
+  margin: 30px auto;
+  padding: 15px;
+  border-radius: 8px;
+  background: #eee;
+  max-width: 1000px;
+  text-align: center; /* Memusatkan teks secara default */
+}
+
+/* 3. Pengaturan Judul */
+#title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* 4. Bagian Gambar (#img-div) */
+#img-div {
+  background: white;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+/* 5. Aturan Gambar Responsif (Memenuhi Tes 16, 17, 18, dan 19) */
+#image {
+  display: block;        /* Membuat gambar menjadi elemen blok */
+  max-width: 100%;       /* Gambar tidak akan lebih lebar dari parent-nya */
+  height: auto;          /* Menjaga proporsi gambar tetap benar */
+  margin: 0 auto;        /* Memusatkan gambar secara horizontal di tengah parent */
+}
+
+/* 6. Caption Gambar */
+#img-caption {
+  margin: 15px 0 5px 0;
+  font-style: italic;
+  font-size: 0.95rem;
+}
+
+/* 7. Informasi Tribute (#tribute-info) */
+#tribute-info {
+  max-width: 700px;
+  margin: 40px auto;
+  text-align: left; /* Teks list dikembalikan ke kiri agar rapi */
+}
+
+#tribute-info h3 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+li {
+  margin-bottom: 12px;
+}
+
+/* 8. Tautan Eksternal (#tribute-link) */
+#tribute-link {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  color: #477ca7;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+#tribute-link:hover {
+  color: #2a4d69;
+}
+
+/* 9. Blockquote untuk Estetika */
+blockquote {
+  background: #fff;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  font-style: italic;
+}
+
+** end of styles.css **
+

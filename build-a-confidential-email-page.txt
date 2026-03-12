@@ -1,0 +1,84 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidential Email</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main id="email">
+    
+    <div id="confidential">CONFIDENTIAL</div>
+
+    <p>Dear Agent <span class="blurred">Smith</span>,</p>
+
+    <p>We have an emergency. The secret formula for our <span class="blurred">Mega Marshmallows</span> has been compromised. This formula is what makes our marshmallows the fluffiest and most delicious.</p>
+
+    <p>We suspect that <span class="blurred">Professor Puff</span> is behind this. He has taken the formula to his hidden laboratory. Your mission is to infiltrate the lab and secure the formula before it's too late.</p>
+
+    <p>Be sure to keep the lab's location confidential. Any leak of this information could jeopardize the entire operation.</p>
+
+    <div id="top-secret">TOP SECRET</div>
+    
+  </main>
+
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Test 1 - 6: Styling Container Email */
+#email {
+  padding: 50px;             /* Test 2 */
+  margin-top: 50px;          /* Test 3 */
+  width: 500px;              /* Test 4 */
+  border: 2px solid black;   /* Test 5 */
+  box-sizing: border-box;    /* Test 6: Padding masuk dalam hitungan width 500px */
+  margin-left: auto;
+  margin-right: auto;
+  background-color: beige;
+  font-family: serif;
+}
+
+/* Test 9 - 16: Styling Elemen Stempel */
+#confidential, 
+#top-secret {
+  display: inline-block;     /* Test 9 & 10 */
+  padding: 10px;             /* Test 11 & 12 */
+  margin-left: 20px;         /* Test 13 & 14 */
+  border: 3px solid red;     /* Test 15 & 16 */
+  color: red;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* Test 19 & 20: Transformasi Rotasi */
+#confidential {
+  transform: rotate(-10deg); /* Test 19 */
+  margin-bottom: 20px;
+}
+
+#top-secret {
+  transform: rotate(5deg);   /* Test 20 */
+  margin-top: 20px;
+}
+
+/* Test 24: Efek Sensor Teks */
+.blurred {
+  filter: blur(3px);         /* Test 24 */
+}
+
+/* Tambahan styling agar teks paragraf lebih terbaca */
+p {
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+** end of styles.css **
+

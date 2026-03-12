@@ -1,0 +1,53 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Video Compilation Page</title>
+</head>
+
+<body>
+  <main>
+    <h1>The Wonders of Space</h1>
+    <p>Exploring the vast mysteries of our universe through stunning video captures.</p>
+
+    <section>
+      <h2>The Milky Way</h2>
+      <p>A journey through our home galaxy.</p>
+      <iframe 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="Milky Way Exploration" 
+        height="315" 
+        width="560">
+      </iframe>
+    </section>
+
+    <section>
+      <h2>Black Holes</h2>
+      <p>Understanding the most powerful forces in nature.</p>
+      <iframe 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="Black Hole Secrets" 
+        height="315" 
+        width="560">
+      </iframe>
+    </section>
+
+    <section>
+      <h2>Mars Rover Missions</h2>
+      <p>Live footage and updates from the Red Planet.</p>
+      <iframe 
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+        title="Mars Rover Journey" 
+        height="315" 
+        width="560">
+      </iframe>
+    </section>
+  </main>
+</body>
+</html>
+
+** end of index.html **
+

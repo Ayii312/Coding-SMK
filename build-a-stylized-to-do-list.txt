@@ -1,0 +1,87 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <ul class="todo-list">
+        <li>
+            <input type="checkbox" id="task-1">
+            <label for="task-1">Design Homepage</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://figma.com" target="_blank">Figma Board</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="task-2">
+            <label for="task-2">Write Documentation</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://github.com" target="_blank">GitHub Repo</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="task-3">
+            <label for="task-3">Record Tutorial</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://youtube.com" target="_blank">Upload Link</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <input type="checkbox" id="task-4">
+            <label for="task-4">Deployment</label>
+            <ul class="sub-item">
+                <li>
+                    <a class="sub-item-link" href="https://vercel.com" target="_blank">Deployment Console</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* 14. Remove text decoration */
+.sub-item-link {
+  text-decoration: none;
+}
+
+/* 15. Unvisited link color */
+.sub-item-link:link {
+  color: blue;
+}
+
+/* 19. Visited link color */
+.sub-item-link:visited {
+  color: purple;
+}
+
+/* 16. Hover color */
+.sub-item-link:hover {
+  color: orange;
+}
+
+/* 18. Focus outline */
+.sub-item-link:focus {
+  outline: 2px solid green;
+}
+
+/* 17. Clicked (Active) color */
+.sub-item-link:active {
+  color: red;
+}
+
+** end of styles.css **
+

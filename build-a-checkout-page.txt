@@ -1,0 +1,53 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Checkout Page</title>
+</head>
+
+<body>
+  <h1>Checkout</h1>
+
+  <section>
+    <h2>Your Cart</h2>
+    <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/10.jpg" alt="A small item in the shopping cart">
+  </section>
+
+  <section>
+    <h2>Payment Information</h2>
+
+    <form>
+      <div>
+        <label for="card-name">
+          Cardholder Name <span aria-hidden="true">*</span>
+        </label>
+        <input type="text" id="card-name" name="card-name" required>
+      </div>
+
+      <div>
+        <label for="card-number">
+          Card Number <span aria-hidden="true">*</span>
+        </label>
+        <input 
+          type="text" 
+          id="card-number" 
+          name="card-number" 
+          aria-describedby="card-number-help" 
+          required
+        >
+        <p id="card-number-help">Enter the 16-digit number on the front of your card without spaces.</p>
+      </div>
+
+      <input type="submit" value="Complete Purchase">
+    </form>
+  </section>
+
+</body>
+
+</html>
+
+** end of index.html **
+

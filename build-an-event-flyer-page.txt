@@ -1,0 +1,72 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Flyer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/event.jpg" alt="Event Banner">
+        <h1>Tech Gala 2026</h1>
+    </header>
+
+    <hr>
+
+    <main>
+        <section>
+            <h2>Event Schedule</h2>
+            <p>Details about the morning sessions.</p>
+        </section>
+        <section>
+            <h2>Location & Directions</h2>
+            <p>How to get to the main hall.</p>
+        </section>
+    </main>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+    /* Set top and bottom padding to 50px */
+    padding: 50px 0;
+    
+    /* Margin 0 for top/bottom, auto for left/right to center */
+    margin: 0 auto;
+    
+    /* Width relative to the viewport width */
+    width: 80vw;
+
+    /* min-height using calc: 100vh - (top padding + bottom padding) */
+    min-height: calc(100vh - 100px);
+    
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Set width of hr and sections relative to parent */
+hr, section {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header, section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+** end of styles.css **
+

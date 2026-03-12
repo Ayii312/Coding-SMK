@@ -1,0 +1,102 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemandangan Rumah CSS 3D</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="sun"></div>
+
+<div id="house">
+  <div id="chimney"></div> <div id="roof"></div>
+  <div id="roof"></div>
+  <div id="window-1"></div>
+  <div id="window-2"></div>
+  <div id="door"></div>
+</div>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+#house {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  border: 5px solid #8b4513; /* Warna cokelat kayu */
+  background-color: #ffa07a; /* Warna Light Salmon sesuai gambar */
+  margin: 100px auto;
+}
+
+/* Mengatur semua anak langsung agar absolute */
+#house > div {
+  position: absolute;
+}
+
+#roof {
+  width: 100%;
+  height: 100px;
+  background-color: #a52a2a; /* Warna merah bata cokelat */
+  border: 5px solid #8b4513;
+  top: 0;
+  box-sizing: border-box; /* Agar border tidak menambah lebar luar */
+}
+
+#chimney {
+  width: 60px;
+  height: 30px;
+  background-color: #eee;
+  border: 2px solid black;
+  top: -30px; /* Di gambar contoh, cerobong ada di atas atap sedikit */
+  right: 50px;
+  z-index: -1;
+}
+
+/* Memperbaiki posisi cerobong untuk Tes 44 (diminta di top: 0) */
+/* Jika Tes 44 masih gagal, ubah top ke 0 */
+#chimney {
+  position: absolute;
+  width: 40px;
+  height: 80px;
+  background-color: #454545;
+  border: 2px solid black;
+  top: -80px; /* Coba nilai negatif sesuai tinggi cerobong */
+  left: 50px;
+  z-index: -1;
+}
+#window-1 {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffca; /* Kuning terang sesuai gambar */
+  border: 5px solid #8b4513;
+  top: 150px;
+  left: 40px;
+}
+
+#window-2 {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffca;
+  border: 5px solid #8b4513;
+  top: 150px;
+  right: 40px;
+}
+
+#door {
+  width: 100px;
+  height: 150px;
+  background-color: #e0e0e0; /* Abu-abu terang sesuai gambar */
+  border: 5px solid #8b4513;
+  bottom: 0;
+  left: 200px; /* Agar pas di tengah (500/2 - 100/2) */
+}
+
+** end of styles.css **
+

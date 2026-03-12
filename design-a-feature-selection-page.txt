@@ -1,0 +1,153 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Feature Selection Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>Feature Selection</h1>
+
+    <div class="feature-card-container">
+        
+        <label class="feature-card">
+            <input type="checkbox"> 
+            <span class="feature-title">Cloud Storage</span>
+            <span class="feature-desc">100 Gigabyte secure storage</span>
+        </label>
+
+        <label class="feature-card">
+            <input type="checkbox"> 
+            <span class="feature-title">Dedicated Support</span>
+            <span class="feature-desc">24/7 customer help</span>
+        </label>
+
+        <label class="feature-card">
+            <input type="checkbox"> 
+            <span class="feature-title">Advanced Analytics</span>
+            <span class="feature-desc">Insights & reports</span>
+        </label>
+
+        <label class="feature-card">
+            <input type="checkbox"> 
+            <span class="feature-title">Custom User Themes</span>
+            <span class="feature-desc">Personalized dashboard design</span>
+        </label>
+
+    </div>
+
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Styling Dasar H1 */
+h1 {
+    text-align: center;
+    font-family: serif;
+    margin-top: 30px;
+}
+
+/* Container untuk Kartu */
+.feature-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Desain Kartu (Label) */
+.feature-card {
+    position: relative;
+    border: 2px solid #ddd;
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+}
+
+.feature-title {
+    display: block;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.feature-desc {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* --- LOGIKA CHECKBOX (TEST 8 - 15) --- */
+
+/* Test 8: Selector untuk checkboxes */
+input[type="checkbox"] {
+    /* Test 9: Menghilangkan gaya default browser */
+    appearance: none;
+    -webkit-appearance: none;
+
+    /* Test 10, 11, 12: Properti Border */
+    border-width: 2px;          /* border width */
+    border-color: #ccc;         /* border color */
+    border-style: solid;        /* border style */
+    
+    /* Ukuran dan posisi kotak (kanan atas) */
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: white;
+    cursor: pointer;
+
+    /* Menyiapkan posisi centang agar di tengah */
+    display: grid;
+    place-content: center;
+}
+
+/* Test 14 & 15: Perubahan saat dicentang (Checked State) */
+input[type="checkbox"]:checked {
+    background-color: #f1b51a;  /* Test 14: background color kuning */
+    border-color: #f1b51a;      /* Test 15: border color kuning */
+}
+
+/* Test 13: Menampilkan tanda centang ✓ di tengah */
+input[type="checkbox"]:checked::after {
+    content: "✓";
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Efek visual tambahan ketika kartu dipilih */
+.feature-card:has(input:checked) {
+    border-color: #f1b51a;
+    box-shadow: 0 4px 15px rgba(241, 181, 26, 0.2);
+}
+
+/* Efek saat kursor melewati kartu (Hover) */
+.feature-card:hover {
+  border-color: #f1b51a; /* Berubah jadi kuning saat dilewati */
+  background-color: #fffdf5; /* Sedikit krem agar terlihat interaktif */
+  transform: translateY(-5px); /* Kartu sedikit terangkat ke atas */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Memberikan bayangan halus */
+}
+
+/* Transisi halus agar perubahan tidak kaku */
+.feature-card {
+  transition: all 0.3s ease-in-out;
+}
+
+** end of styles.css **
+

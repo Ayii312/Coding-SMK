@@ -1,0 +1,69 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Color Grid Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="color-grid">
+        <div class="color-box color1"></div>
+        <div class="color-box color2"></div>
+        <div class="color-box color3"></div>
+        <div class="color-box color4"></div>
+        <div class="color-box color5"></div>
+    </div>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Test 1: Body background */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Test 5: Box dimensions */
+.color-box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+/* Test 6: Hexadecimal */
+.color1 {
+    background-color: #ff5733;
+}
+
+/* Test 7: RGB */
+.color2 {
+    background-color: rgb(33, 255, 87);
+}
+
+/* Test 8: Predefined word */
+.color3 {
+    background-color: dodgerblue;
+}
+
+/* Test 9: HSL */
+.color4 {
+    background-color: hsl(280, 100%, 50%);
+}
+
+/* Test 10: Any background color */
+.color5 {
+    background-color: #333333;
+}
+
+** end of styles.css **
+
